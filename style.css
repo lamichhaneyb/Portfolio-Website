@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation bar */        
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 600px;
+    animation: fadeUp 1s ease forwards;
+}
+
+.nav-buttons {
+	background: #2a2a2a;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family:'Lucida Sans';
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.nav-buttons:hover {
+    outline: 2px solid #00B3FF;
+    box-shadow: 0 0 10px #00B3FF;
+    transform: scale(1.1);
+}
+
+/* Home Page */
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    animation: fadeUp 1s ease forwards;
+}
+
+.main h1 {
+    font-family: georgia;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 7px;
+    background: #00B3FF;
+    margin: 15px 0 25px 0;
+    border-radius: 3px;
+}
+
+.main h2 {
+    font-family: georgia;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+}
+
+.circle {
+	width: 55px;
+	height: 55px;
+	background: #2a2a2a;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.circle:hover {
+    outline: 2px solid #00B3FF;
+    box-shadow: 0 0 10px #00B3FF;
+    transform: scale(1.1);
+}
+
+
+/* About Page */
+
+.about-section {
+  	padding: 80px 120px;
+}
+
+.pageTitle {
+    font-family: georgia;
+	font-size: 60px;
+    font-weight: 20;
+	margin-bottom: 10px;
+	margin-left: 60px;
+	animation: fadeUp 1s ease forwards;
+}
+
+.aboutUnderline {
+	width: 260px;
+	height: 2px;
+	background: #00aaff;
+	margin-bottom: 50px;
+	margin-left: 60px;
+	animation: fadeUp 1s ease forwards;
+}
+
+.aboutGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 80px;
+	margin-left: 60px;
+    margin-right: 60px;
+	animation: fadeUp 1s ease forwards;
+}
+
+.textBlock {
+	margin-bottom: 60px;
+	font-size: 25px;
+}
+
+.textBlock h3 {
+    font-family: 'Courier New';
+	margin-bottom: 15px;
+	font-weight: 525;
+}
+
+.textBlock p {
+    font-family: 'Courier New';
+	margin-bottom: 10px;
+	line-height: 1.6;
+}
+
+/* Loadup animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
