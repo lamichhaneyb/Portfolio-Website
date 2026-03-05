@@ -11,10 +11,36 @@ body {
     flex-direction: column;
 }
 
+/* Pages Layout */
+.pageTitle {
+    font-family: georgia;
+    text-underline-offset: 20px;
+    text-decoration: underline;
+    text-decoration-color: #00B3FF;
+	font-size: 60px;
+    font-weight: 20;
+	margin-bottom: 10px;
+	margin-left: 60px;
+	animation: fadeUp 1s ease forwards;
+    margin-bottom: 50px;
+	margin-left: 60px;
+}
+
+.textGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 80px;
+	margin-left: 60px;
+    margin-right: 60px;
+	animation: fadeUp 1s ease forwards;
+}
+
+
 /* Navigation bar */        
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 60px;
     padding: 20px 600px;
     animation: fadeUp 1s ease forwards;
 }
@@ -29,6 +55,7 @@ nav {
     font-family:'Lucida Sans';
     transition: all 0.3s ease;
     border: 1px solid transparent;
+    white-space: nowrap;
 }
 
 .nav-buttons:hover {
@@ -97,38 +124,6 @@ nav {
 
 
 /* About Page */
-
-.about-section {
-  	padding: 80px 120px;
-}
-
-.pageTitle {
-    font-family: georgia;
-	font-size: 60px;
-    font-weight: 20;
-	margin-bottom: 10px;
-	margin-left: 60px;
-	animation: fadeUp 1s ease forwards;
-}
-
-.aboutUnderline {
-	width: 260px;
-	height: 2px;
-	background: #00aaff;
-	margin-bottom: 50px;
-	margin-left: 60px;
-	animation: fadeUp 1s ease forwards;
-}
-
-.aboutGrid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 80px;
-	margin-left: 60px;
-    margin-right: 60px;
-	animation: fadeUp 1s ease forwards;
-}
-
 .textBlock {
 	margin-bottom: 60px;
 	font-size: 25px;
@@ -145,6 +140,9 @@ nav {
 	margin-bottom: 10px;
 	line-height: 1.6;
 }
+
+/* CV Page */
+
 
 /* Loadup animation */
 @keyframes fadeUp {
