@@ -19,11 +19,9 @@ body {
     text-decoration-color: #00B3FF;
 	font-size: 60px;
     font-weight: 20;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	margin-left: 60px;
 	animation: fadeUp 1s ease forwards;
-    margin-bottom: 50px;
-	margin-left: 60px;
 }
 
 .textGrid {
@@ -33,6 +31,15 @@ body {
 	margin-left: 60px;
     margin-right: 60px;
 	animation: fadeUp 1s ease forwards;
+}
+
+.pageLogo { 
+    position: absolute;
+    margin-right: 60px;
+    margin-top: 75px;
+    right: 1px;
+    max-width: 150px;
+    animation: fadeUp 1s ease forwards;
 }
 
 
@@ -101,6 +108,10 @@ nav {
 .icons {
     display: flex;
     gap: 30px;
+}
+
+.logo {
+    transform: scale(.7);
 }
 
 .circle {
