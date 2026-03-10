@@ -42,6 +42,28 @@ body {
     animation: fadeUp 1s ease forwards;
 }
 
+/* Text blocks */
+.textBlock {
+	margin-bottom: 60px;
+	font-size: 25px;
+}
+
+.textBlock h3 {
+    font-family: 'Courier New';
+	margin-bottom: 15px;
+	font-weight: 525;
+    font-size: 35px;
+}
+
+.textBlock p {
+    font-family: 'Courier New';
+	margin-bottom: 10px;
+	line-height: 1.6;
+}
+
+.textBlock ul {
+    padding-left: 50px;
+}
 
 /* Navigation bar */        
 nav {
@@ -112,6 +134,7 @@ nav {
 
 .logo {
     transform: scale(.7);
+    filter: invert(.1);
 }
 
 .circle {
@@ -133,27 +156,35 @@ nav {
     transform: scale(1.1);
 }
 
-
-/* About Page */
-.textBlock {
-	margin-bottom: 60px;
-	font-size: 25px;
-}
-
-.textBlock h3 {
+.contactMessage h3{
     font-family: 'Courier New';
-	margin-bottom: 15px;
-	font-weight: 525;
+    font-weight: 5;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+    animation: fadeUp 1s ease forwards;
 }
 
-.textBlock p {
+.contactMessage h2 {
     font-family: 'Courier New';
-	margin-bottom: 10px;
-	line-height: 1.6;
+    font-weight: 5;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 70px;
 }
 
-/* CV Page */
+.contactAccent {
+    width: 60px;
+    height: 7px;
+    background: #00B3FF;
+    margin: 15px auto 25px;
+    border-radius: 3px;
+}
 
+.button-link {
+    text-decoration: none;
+    color: white;
+}
 
 /* Loadup animation */
 @keyframes fadeUp {
