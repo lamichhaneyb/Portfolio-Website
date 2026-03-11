@@ -17,12 +17,12 @@ body {
     text-underline-offset: 20px;
     text-decoration: underline;
     text-decoration-color: #00B3FF;
-	font-size: clamp(32px, 5vw, 60px);
+	font-size: clamp(20px, 5vw, 60px);
     font-weight: 20;
 	margin-bottom: 30px;
-	margin-left: clamp(15px, 5vw, 60px);
-    margin-right: clamp(15px, 5vw, 60px);
-    padding-left: 60px;
+	margin-left: clamp(10px, 5vw, 60px);
+    margin-right: clamp(10px, 5vw, 60px);
+    padding-left: clamp(10px, 5vw, 60px);
 	animation: fadeUp 1s ease forwards;
 }
 
@@ -30,7 +30,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 80px;
-	margin-left: 60px;
+	padding-left: clamp(10px, 5vw, 60px);
     margin-right: 60px;
 	animation: fadeUp 1s ease forwards;
 }
@@ -38,17 +38,18 @@ body {
 .pageLogo { 
     position: absolute;
     margin-right: clamp(15px, 5vw, 60px);
-    padding-right: clamp(30px, 5vw, 60px);
+    padding-right: clamp(50px, 5vw, 60px);
     margin-top: 75px;
     right: 1px;
     max-width: clamp(80px, 8vw, 150px);
+    max-height: clamp(50px, 8vw, 150px);
     animation: fadeUp 1s ease forwards;
 }
 
 /* Text blocks */
 .textBlock {
 	margin-bottom: 60px;
-	font-size: clamp(18px, 2vw, 25px);
+	font-size: clamp(15px, 2vw, 25px);
     margin-left: clamp(15px, 5vw, 60px);
     margin-right: clamp(15px, 5vw, 60px);
 }
@@ -57,7 +58,7 @@ body {
     font-family: 'Courier New';
 	margin-bottom: 15px;
 	font-weight: 525;
-    font-size: clamp(24px, 3vw, 35px);
+    font-size: clamp(20px, 3vw, 35px);
 }
 
 .textBlock p {
@@ -74,7 +75,7 @@ body {
 nav {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: clamp(10px, 3vw, 60px);
     padding: 20px clamp(20px, 8vw, 200px);
     animation: fadeUp 1s ease forwards;
 }
@@ -85,7 +86,7 @@ nav {
     padding: clamp(10px, 2vw, 12px) clamp(15px, 2vw, 25px);
     border-radius: 30px;
     text-decoration: none;
-    font-size: clamp(15px, 2vw, 17px);
+    font-size: clamp(12px, 2vw, 17px);
     font-family:'Lucida Sans';
     border: 1px solid transparent;
     white-space: nowrap;
@@ -111,7 +112,7 @@ nav {
 
 .main h1 {
     font-family: georgia;
-    font-size: 60px;
+    font-size: clamp(20px, 5vw, 60px);
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -126,7 +127,7 @@ nav {
 
 .main h2 {
     font-family: georgia;
-    font-size: 30px;
+    font-size: clamp(15px, 3vw, 30px);
     font-weight: 600;
     color: #ffffff;
     margin-bottom: 40px;
@@ -138,13 +139,18 @@ nav {
 }
 
 .logo {
-    transform: scale(.7);
+    width: clamp(40px, 5vw, 55px);
+	height: clamp(40px, 5vw, 55px);
     filter: invert(.1);
 }
 
+.git {
+    transform: scale(.8);
+}
+
 .circle {
-	width: 55px;
-	height: 55px;
+	width: clamp(40px, 5vw, 55px);
+	height: clamp(40px, 5vw, 55px);
 	background: #2a2a2a;
 	border-radius: 50%;
 	display: flex;
