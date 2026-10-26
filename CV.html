@@ -1,52 +1,83 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Bimal Lamichhaney</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="brand">Bimal Lamichhaney</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutMe.html">About</a>
+            <a href="CV.html" class="current">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CV</title>
-		<link rel="stylesheet" href = "style.css">
-	</head>
+    <main class="container">
+        <h1 class="page-title">Resume</h1>
 
-	<body>  
+        <div class="grid">
+            <section class="card">
+                <h2>Education</h2>
+                <p>Bachelor's Degree, Computer Science</p>
+                <p class="muted">Expected graduation: 2028</p>
+            </section>
 
-		<nav>
-			<a href="index.html" class="nav-buttons">Home</a> 
-			<a href="aboutMe.html" class="nav-buttons">About Me</a> 
-			<a href="CV.html" class="nav-buttons current">CV</a>
-			<a href="projects.html" class="nav-buttons">Projects</a>
-			<a href="contact.html" class="nav-buttons">Contact</a>
-		</nav>
+            <section class="card">
+                <h2>Relevant Coursework</h2>
+                <ul class="list">
+                    <li>Data Structures</li>
+                    <li>Discrete Mathematics</li>
+                    <li>Computer Organization</li>
+                </ul>
+            </section>
 
-		<h1 class="pageTitle">CV</h1>
+            <section class="card card-wide">
+                <h2>Skills</h2>
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <ul class="tags">
+                        <li>C++</li>
+                        <li>TypeScript</li>
+                        <li>HTML/CSS</li>
+                        <li>Python (learning)</li>
+                        <li>MIPS Assembly (learning)</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Frameworks</h3>
+                    <ul class="tags">
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools</h3>
+                    <ul class="tags">
+                        <li>Firebase</li>
+                        <li>Vite</li>
+                        <li>Git</li>
+                        <li>GitHub Pages</li>
+                        <li>Vercel</li>
+                    </ul>
+                </div>
+            </section>
 
-		<img src="images/cv_img.svg" class="pageLogo">
-
-		<div class="textGrid">
-			<div class="textBlock">
-				<h3>Bachelor's Degree: Computer Science</h3>
-				<h3>Expected Graduation Year: 2028</h3>
-			</div>
-			
-			<div class="textBlock">
-                <h3>Relevent Courses:</h3>
-                <p>Data Structures </p>
-				<p>Discrete Mathematics </p>
-				<p>Computer Organization </p>
-            </div>
-
-			<div class="textBlock">
-                <h3>Languages:</h3>
-                <p>C++</p>
-				<p>HTML/CSS</p>
-				<p>Python (Learning)</p>
-				<p>Mips-Assembly (Learning)</p>
-            </div>
-
-			<div class="textBlock">
-				<h3>Currently Exploring:</h3>
-				<p>Low-level programming concepts</p>
-				<p>Python programming practices</p>
-			</div>
-		</div>
-	</body>
+            <section class="card card-wide">
+                <h2>Currently Exploring</h2>
+                <ul class="list">
+                    <li>Low-level programming concepts</li>
+                    <li>Python programming practices</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
 </html>

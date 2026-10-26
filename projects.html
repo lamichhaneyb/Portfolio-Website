@@ -1,37 +1,72 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Bimal Lamichhaney</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="brand">Bimal Lamichhaney</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutMe.html">About</a>
+            <a href="CV.html">Resume</a>
+            <a href="projects.html" class="current">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Projects</title>
-		<link rel="stylesheet" href = "style.css">
-	</head>
+    <main class="container">
+        <h1 class="page-title">Projects</h1>
 
-	<body>  
+        <div class="grid">
+            <article class="card project">
+                <h2>Trajectory</h2>
+                <p class="project-type">Productivity dashboard, Personal project</p>
+                <p>A daily productivity dashboard website. It works without an account, but signing in with Google or email syncs data across devices, protected by server-side security rules. Built with AI-assisted development using Claude Code.</p>
+                <ul class="tags">
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>Firebase</li>
+                    <li>Vercel</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://trajectory-ten-pied.vercel.app" target="_blank" rel="noopener noreferrer" class="button button-small button-primary">Live Site</a>
+                </div>
+            </article>
 
-		<nav>
-			<a href="index.html" class="nav-buttons">Home</a> 
-			<a href="aboutMe.html" class="nav-buttons">About Me</a> 
-			<a href="CV.html" class="nav-buttons">CV</a>
-			<a href="projects.html" class="nav-buttons current">Projects</a>
-			<a href="contact.html" class="nav-buttons">Contact</a>
-		</nav>
+            <article class="card project">
+                <h2>WhatsToday</h2>
+                <p class="project-type">Team project, Front end</p>
+                <p>Team project where I was front end. Shows historical events, birthdays and more for each day, using live data from the Wikipedia API.</p>
+                <ul class="tags">
+                    <li>Wikipedia API</li>
+                    <li>GitHub Pages</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://lamichhaneyb.github.io/WhatsToday-Website/" target="_blank" rel="noopener noreferrer" class="button button-small button-primary">Live Site</a>
+                    <a href="https://github.com/lamichhaneyb/WhatsToday-Website" target="_blank" rel="noopener noreferrer" class="button button-small button-secondary">Code</a>
+                </div>
+            </article>
 
-		<h1 class="pageTitle">Projects</h1>
-
-		<img src="images/project_img.svg" class="pageLogo">
-
-		<div class="textGrid">
-			<div class="textBlock">
-				<h3>Personal Portfolio Website</h3>
-				<ul>
-					<li><p>Built using HTML/CSS</p></li>
-					<li><p>Minimalist design for clarity</p></li>
-					<li><p>Layout adapts to screen size</p></li>
-					<li><p>Interactive icons</p></li>
-					<li><p>Simple animations</p></li>
-				</ul>
-			</div>
-		</div>
-	</body>
+            <article class="card project">
+                <h2>Personal Portfolio Website</h2>
+                <p class="project-type">This site</p>
+                <p>A minimal, responsive portfolio built from scratch without frameworks. The layout adapts to any screen size.</p>
+                <ul class="tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/lamichhaneyb/Portfolio-Website" target="_blank" rel="noopener noreferrer" class="button button-small button-secondary">Code</a>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
 </html>

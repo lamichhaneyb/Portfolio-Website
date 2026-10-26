@@ -1,60 +1,55 @@
 <!DOCTYPE html>
-
-    <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href = "style.css">
-    </head>
-
-    <body>
-
+    <title>About | Bimal Lamichhaney</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="brand">Bimal Lamichhaney</a>
         <nav>
-			<a href="index.html" class="nav-buttons">Home</a> 
-			<a href="aboutMe.html" class="nav-buttons current">About Me</a> 
-			<a href="CV.html" class="nav-buttons">CV</a>
-			<a href="projects.html" class="nav-buttons">Projects</a>
-			<a href="contact.html" class="nav-buttons">Contact</a>
-		</nav>
+            <a href="index.html">Home</a>
+            <a href="aboutMe.html" class="current">About</a>
+            <a href="CV.html">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <h1 class="pageTitle">About Me</h1>
+    <main class="container">
+        <h1 class="page-title">About Me</h1>
 
-    <img src="images/aboutme_img.svg" class="pageLogo">
+        <div class="grid">
+            <section class="card">
+                <h2>Introduction</h2>
+                <p>Hello, my name is <span class="nowrap">Bimal Lamichhaney</span>. I am a third-year Computer Science student interested in software development.</p>
+            </section>
 
-        <div class="textGrid">
-            <div class="textBlock">
-                <h3>Introduction:</h3>
-                <p>Hello, my name is Bimal Lamichhaney. I am a 3rd Year Computer Science Student interested
-                    in software development.
-                </p>
-            </div>
+            <section class="card">
+                <h2>Experience</h2>
+                <p>One year of C++ focused on data structures, memory management and problem solving, plus web development with React, TypeScript and Firebase.</p>
+            </section>
 
-            <div class="textBlock">
-                <h3>Experience:</h3>
-                <p>
-                    1 year of C++ focusing on data structures, 
-                    memory management, and problem solving
-                </p>
-            </div>
+            <section class="card">
+                <h2>Goals</h2>
+                <p>Right now I am strengthening my foundations and learning the languages that will be most useful in my career. I am currently learning Python.</p>
+            </section>
 
-            <div class="textBlock">
-                <h3>Hobbies:</h3>
-                <ul>
-                    <li><p>Listening to music</p></li>
-                    <li><p>Working out</p></li>
-                    <li><p>Badminton</p></li>
-                    <li><p>Video games</p></li>
+            <section class="card">
+                <h2>Hobbies</h2>
+                <ul class="list">
+                    <li>Listening to music</li>
+                    <li>Working out</li>
+                    <li>Badminton</li>
+                    <li>Video games</li>
                 </ul>
-            </div>
-
-            <div class="textBlock">
-                <h3>Goals:</h3>
-                <p>
-                    My goals right now are working on my foundations,
-                    learning languages that are important and useful
-                    for my future. Currently I am learning Python.
-                </p>
-            </div>
+            </section>
         </div>
-    </body>
+    </main>
+</body>
 </html>
